@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="80" height="160" viewBox="0 0 80 160" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="火箭图标">
+  <defs>
+    <linearGradient id="bodyGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#D9E6FF"/>
+      <stop offset="100%" stop-color="#A1B8FF"/>
+    </linearGradient>
+    <linearGradient id="windowGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#7DD3FC"/>
+      <stop offset="100%" stop-color="#38BDF8"/>
+    </linearGradient>
+  </defs>
+  <!-- nose -->
+  <path d="M40 4 C52 18 60 42 60 66 L20 66 C20 42 28 18 40 4 Z" fill="url(#bodyGrad)" stroke="#6B7FD6" stroke-width="2"/>
+  <!-- body -->
+  <rect x="20" y="66" width="40" height="56" rx="10" fill="url(#bodyGrad)" stroke="#6B7FD6" stroke-width="2"/>
+  <!-- window -->
+  <circle cx="40" cy="94" r="10" fill="url(#windowGrad)" stroke="#2563EB" stroke-width="2"/>
+  <!-- fins -->
+  <path d="M20 94 L6 114 L20 118 Z" fill="#8094FF" stroke="#6B7FD6" stroke-width="2"/>
+  <path d="M60 94 L74 114 L60 118 Z" fill="#8094FF" stroke="#6B7FD6" stroke-width="2"/>
+  <!-- engine -->
+  <rect x="30" y="122" width="20" height="16" rx="4" fill="#5563C1"/>
+  <!-- guide for thruster flame origin -->
+  <circle id="thruster" cx="40" cy="140" r="0.5" fill="#ff0"/>
+</svg>
