@@ -1,18 +1,42 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="zh-CN">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-  <title>my-first-website</title>
-  <LINK href="styles.css" rel="stylesheet" type="text/css">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
+  <title>攻打月球行动</title>
+  <link href="styles.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
+  <div id="hero" class="hero" role="region" aria-label="攻打月球动画区域">
+    <canvas id="hero-canvas" aria-label="攻打月球动画" role="img"></canvas>
+    <div id="hero-overlay" class="overlay" aria-live="polite">
+      <div class="titles">
+        <h1 id="intro-title" class="title-intro" aria-label="攻打月球行动开始">攻打月球行动开始</h1>
+        <h1 id="final-title" class="title-final" aria-label="任务完成" aria-hidden="true">任务完成</h1>
+      </div>
+      <div class="controls" role="group" aria-label="动画控件">
+        <button id="replay-btn" class="btn" aria-label="重新播放动画">重新播放</button>
+        <button id="sound-btn" class="btn" aria-label="切换音效">音效：关</button>
+        <button id="skip-btn" class="btn" aria-label="跳过动画">跳过动画</button>
+        <a id="cta-btn" href="#" class="btn primary" aria-label="了解更多">了解更多</a>
+      </div>
+      <div id="loading" class="loading" aria-hidden="true" role="status">加载中…</div>
+    </div>
+    <noscript>
+      <div class="noscript">
+        <h1>任务完成</h1>
+        <p>您的浏览器已禁用 JavaScript，无法播放动画。</p>
+        <a href="#" class="btn primary">了解更多</a>
+      </div>
+    </noscript>
+  </div>
 
-<img src="https://octodex.github.com/images/daftpunktocat-thomas.gif" id="octocat" alt="octocat-gif" />
+  <main class="content">
+    <img src="https://octodex.github.com/images/daftpunktocat-thomas.gif" id="octocat" alt="Octocat gif" />
+    <p>Welcome to your first GitHub Pages website!</p>
+  </main>
 
-<!-- Change this code here by copy and pasting your template on line 15 -->
-<p>Welcome to your first GitHub Pages website!</p>
-
+  <script src="scripts/animation.js" defer></script>
 </body>
 </html>
